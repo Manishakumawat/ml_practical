@@ -5,9 +5,9 @@ import numpy as np
 import pandas as pd
 st.set_option('deprecation.showfileUploaderEncoding', False)
 # Load the pickled model
-pickle_in = open("/content/drive/My Drive/manisha_model.pkl","rb")
+pickle_in = open("manisha_model.pkl","rb")
 model=pickle.load(pickle_in)
-dataset= pd.read_csv('/content/drive/My Drive/1.csv')
+dataset= pd.read_csv('1.csv')
 X = dataset.iloc[:,1:9].values
 
 
